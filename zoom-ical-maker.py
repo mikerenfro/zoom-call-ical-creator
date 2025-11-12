@@ -75,7 +75,7 @@ def create_call_event(call, year, month, call_type, homepage, ics_data, current_
         description = f"Call document {call_doc}"
         event.add('description', description)
     if topic != None and topic != '':
-        summary = f'{title}: {topic}'
+        summary = f'{title} - {topic}'
     else:
         summary = title
     if status == 'CANCELLED':
